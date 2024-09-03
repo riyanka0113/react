@@ -18,7 +18,7 @@ const ProfileForm = () => {
 
     setIsLodding(true);
 
-    fetch('https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyCVfkQFk3jT2zmdxUmYFs9TKFDd0m0VM1g',{
+    fetch('https://identitytoolkit.googleapis.com/v1/accounts:update?key={add_your_key}',{
       method: 'POST',
       body: JSON.stringify({
         idToken: AuthCtx.token,
